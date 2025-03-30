@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>徐次雄的个人博客</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+  <!-- 动态网格背景 -->
+  <canvas id="gridCanvas"></canvas>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">
+          <span class="logo-text"><h1>XU CX</h1></span>
+          <span class="logo-dot" style="color: var(--secondary)">.</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active"><h1>首页</h1></a></li>
+          <li><a href="gallery.html" class="nav-link"><h1>视频相册</h1></a></li>
+          <li><a href="articles.html" class="nav-link"><h1>文章</h1></a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle">
+              <span class="theme-icon">🌓</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title animate-on-scroll">
+          你好，我是<span class="highlight">徐次雄</span>
+        </h1>
+        <p class="hero-subtitle animate-on-scroll">
+          心理学爱好者 | 羽毛球达人 | 技术探索者
+        </p>
+        <p class="hero-motto animate-on-scroll">
+          "Never give up !"
+        </p>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="grid">
+          <div class="card animate-on-scroll">
+            <h2 class="card-title">关于我</h2>
+            <div class="card-content">
+              <p><span class="info-label">姓名:</span> 徐次雄</p>
+              <p><span class="info-label">性别:</span> 男</p>
+              <p><span class="info-label">民族:</span> 汉族</p>
+              <p><span class="info-label">爱好:</span> 羽毛球、心理学研究</p>
+              <p><span class="info-label">所在院校:</span> 江西水利职业学院</p>
+              <p><span class="info-label">喜欢的水果:</span> 葡萄、西瓜、橙子</p>
+            </div>
+          </div>
+
+          <div class="card animate-on-scroll">
+           <ul>
+            <h2 class="card-title">心理学研究</h2>
+           
+            <li><p>专注于认知心理学和行为经济学研究</p></li>
+            <li><p>喜欢探索人类决策背后的心理机制</p></li>
+            
+           </ul>
+          </div>
+
+          <div class="card animate-on-scroll">
+            <ul>
+              <h2 class="card-title">羽毛球</h2>
+            
+           <li> <p>业余羽毛球爱好者</p></li>
+            <li><p>每周坚持训练3次</p></li>
+            <li><p>擅长双打配合</p></li>
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script>
+    // 动态网格背景
+    const canvas = document.getElementById('gridCanvas');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const ctx = canvas.getContext('2d');
+    
+    function drawGrid() {
+      ctx.strokeStyle = 'rgba(100, 255, 218, 0.1)';
+      ctx.lineWidth = 1;
+      
+      const gridSize = 50;
+      const cols = Math.ceil(canvas.width / gridSize);
+      const rows = Math.ceil(canvas.height / gridSize);
+      
+      for (let i = 0; i < cols; i++) {
+        ctx.beginPath();
+        ctx.moveTo(i * gridSize, 0);
+        ctx.lineTo(i * gridSize, canvas.height);
+        ctx.stroke();
+      }
+      
+      for (let j = 0; j < rows; j++) {
+        ctx.beginPath();
+        ctx.moveTo(0, j * gridSize);
+        ctx.lineTo(canvas.width, j * gridSize);
+        ctx.stroke();
+      }
+    }
+    
+    drawGrid();
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      drawGrid();
+    });
+  </script>
+</body>
+</html>

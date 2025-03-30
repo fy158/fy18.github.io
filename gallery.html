@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>徐次雄的视频相册</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+  <canvas id="gridCanvas"></canvas>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">
+          <span class="logo-text"><h1>XU CX</h1></span>
+          <span class="logo-dot" style="color: var(--secondary)">.</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link"><h1>首页</h1></a></li>
+          <li><a href="gallery.html" class="nav-link active"><h1>视频相册</h1></a></li>
+          <li><a href="articles.html" class="nav-link"><h1>文章</h1></a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle">
+              <span class="theme-icon">🌓</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="gallery">
+      <div class="container">
+        <br>
+        <h1 class="section-title animate-on-scroll">视频相册</h1>
+        
+        <div class="video-grid">
+          <div class="video-item animate-on-scroll">
+            <video class="video-thumbnail" poster="00003.webp" data-src="2a0be6a488cae9f24891ef927f776b25.mp4"></video>
+            <div class="video-overlay">
+              <button class="play-button">▶</button>
+            </div>
+          </div>
+          <div class="video-item animate-on-scroll">
+            <video class="video-thumbnail" poster="科技.png" data-src="670f161d538a6ea71b203d02da95d31b.mp4"></video>
+            <div class="video-overlay">
+              <button class="play-button">▶</button>
+            </div>
+          </div>
+          <div class="video-item animate-on-scroll">
+            <video class="video-thumbnail" poster="5ADE5105E33B03EBD7A8F35A62865A5CEB34A767_size575_w1920_h1152.jpg" data-src="872047ed3d0e006fc6ebdc4435353130.mp4"></video>
+            <div class="video-overlay">
+              <button class="play-button">▶</button>
+            </div>
+          </div>
+          <div class="video-item animate-on-scroll">
+            <video class="video-thumbnail" poster="科技.png" data-src="aab6befc8373d3572c44858646cc8057.mp4"></video>
+            <div class="video-overlay">
+              <button class="play-button">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-grid">
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="00003.webp" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_20250330093948.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_20250330093949.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_20250330094452.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_20250330094454.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_20250330094456.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_20250330094457.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939471.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939472.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939473.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939474.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939481.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939482.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939483.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939484.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939485.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939486.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939487.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939491.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939492.jpg" loading="lazy">
+          </div>
+          <div class="photo-item animate-on-scroll">
+            <img class="photo-thumbnail" src="微信图片_202503300939493.jpg" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <div class="video-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <video controls autoplay class="modal-video"></video>
+    </div>
+  </div>
+
+  <div class="image-modal">
+    <div class="modal-content">
+      <span class="close-image-modal">&times;</span>
+      <img class="modal-image">
+    </div>
+  </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+  <script>
+    // 动态网格背景
+    const canvas = document.getElementById('gridCanvas');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const ctx = canvas.getContext('2d');
+    
+    function drawGrid() {
+      ctx.strokeStyle = 'rgba(100, 255, 218, 0.1)';
+      ctx.lineWidth = 1;
+      
+      const gridSize = 50;
+      const cols = Math.ceil(canvas.width / gridSize);
+      const rows = Math.ceil(canvas.height / gridSize);
+      
+      for (let i = 0; i < cols; i++) {
+        ctx.beginPath();
+        ctx.moveTo(i * gridSize, 0);
+        ctx.lineTo(i * gridSize, canvas.height);
+        ctx.stroke();
+      }
+      
+      for (let j = 0; j < rows; j++) {
+        ctx.beginPath();
+        ctx.moveTo(0, j * gridSize);
+        ctx.lineTo(canvas.width, j * gridSize);
+        ctx.stroke();
+      }
+    }
+    
+    drawGrid();
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      drawGrid();
+    });
+  </script>
+</body>
+</html>

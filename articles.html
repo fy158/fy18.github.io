@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>徐次雄的文章 - 个人博客</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/articles.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="gridCanvas"></canvas>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">
+          <span class="logo-text"><h1>XU CX</h1></span>
+          <span class="logo-dot" style="color: var(--secondary)">.</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link "><h1>首页</h1></a></li>
+          <li><a href="gallery.html" class="nav-link"><h1>视频相册</h1></a></li>
+          <li><a href="articles.html" class="nav-link active"><h1>文章</h1></a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle">
+              <span class="theme-icon">🌓</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <main class="articles-container">
+    <section class="articles-section">
+      <br>
+      <h1 class="section-title animate-on-scroll">我的文章</h1>
+      <p class="section-subtitle animate-on-scroll">分享我的心理学研究和生活感悟</p>
+      
+      <div class="articles-grid">
+        <!-- 文章卡片1 -->
+        <article class="article-card animate-on-scroll">
+          <div class="article-image">
+            <img src="5ADE5105E33B03EBD7A8F35A62865A5CEB34A767_size575_w1920_h1152.jpg" alt="心理学研究" loading="lazy">
+          </div>
+          <div class="article-content">
+            <h2 class="article-title">认知行为疗法的实践应用</h2>
+            <p class="article-excerpt">探讨认知行为疗法在日常生活中的实际应用，以及如何通过改变思维模式来改善情绪...</p>
+            <div class="article-meta">
+              <span class="article-date">2025-03-15</span>
+              <span class="article-category">心理学</span>
+            </div>
+            <a href="#" class="article-link" data-article-id="1">阅读全文</a>
+          </div>
+        </article>
+        
+        <!-- 文章卡片2 -->
+        <article class="article-card animate-on-scroll">
+          <div class="article-image">
+            <img src="科技.png" alt="羽毛球技巧" loading="lazy">
+          </div>
+          <div class="article-content">
+            <h2 class="article-title">羽毛球运动中的心理战术</h2>
+            <p class="article-excerpt">分析羽毛球比赛中常见的心理战术，以及如何通过心理训练提升比赛表现...</p>
+            <div class="article-meta">
+              <span class="article-date">2025-03-10</span>
+              <span class="article-category">运动心理</span>
+            </div>
+            <a href="#" class="article-link" data-article-id="2">阅读全文</a>
+          </div>
+        </article>
+        
+        <!-- 文章卡片3 -->
+        <article class="article-card animate-on-scroll">
+          <div class="article-image">
+            <img src="科技.png" alt="日常心理学" loading="lazy">
+          </div>
+          <div class="article-content">
+            <h2 class="article-title">水果与心理健康的关系</h2>
+            <p class="article-excerpt">研究葡萄、西瓜和橙子等水果中的营养成分对心理健康的影响...</p>
+            <div class="article-meta">
+              <span class="article-date">2025-03-05</span>
+              <span class="article-category">健康心理</span>
+            </div>
+            <a href="#" class="article-link" data-article-id="3">阅读全文</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    
+    <!-- 文章详情模态框 -->
+    <div class="article-modal">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <article class="article-detail">
+          <h1 class="article-detail-title"></h1>
+          <div class="article-meta">
+            <span class="article-date"></span>
+            <span class="article-category"></span>
+          </div>
+          <div class="article-detail-image"></div>
+          <div class="article-detail-content"></div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-quote"><h2>"只想努力,绝不放弃" - 徐次雄</h2></p>
+      <div class="social-links">
+        <a href="#" class="social-link"><h3>微博</h3></a>
+        <a href="#" class="social-link"><h3>知乎</h3></a>
+        <a href="#" class="social-link"><h3>GitHub</h3></a>
+      </div>
+      <p class="copyright">&copy; 2025 徐次雄的个人博客. 保留所有权利.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/articles.js"></script>
+</body>
+</html>
